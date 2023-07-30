@@ -1,0 +1,84 @@
+{
+  "background": {
+    "scripts": ["service_worker.ts"] ,
+    "persistent": false
+  },
+  "content_scripts": [
+    {
+      "js": [
+        "content/swipe-main-banner/App.tsx"
+      ],
+      "matches": [
+        "https://www.amazon.com/*",
+        "https://www.walmart.com/*",
+        "https://www.homedepot.com/*",
+        "https://www.target.com/*",
+        "https://www.etsy.com/*",
+        "https://www.ebay.com/*",
+        "https://pay.ebay.com/*",
+        "https://www.lowes.com/*",
+        "https://www.bestbuy.com/*",
+        "https://www.macys.com/*",
+        "https://secure.wayfair.com/*",
+        "https://www.nordstrom.com/*",
+        "https://www.kohls.com/*",
+        "https://www.samsclub.com/*",
+        "https://www.doordash.com/*",
+        "https://www.costco.com/*",
+        "https://www.bloomingdales.com/*",
+        "https://www.saksfifthavenue.com/*",
+        "https://www.nordstromrack.com/*",
+        "https://international.jcrew.com/*",
+        "https://secure.asos.com/*",
+        "https://www.lulus.com/*",
+        "https://secure-www.gap.com/*",
+        "https://us.shein.com/*",
+        "https://www.dsw.com/*",
+        "https://www.adidas.co.in/*",
+        "https://www.saksoff5th.com/*",
+        "https://www.newbalance.com/*",
+        "https://www.converse.com/*", 
+        "https://www.vans.com/*",
+        "https://www.reebok.com/*",
+        "https://in.puma.com/*",
+        "https://www.sauconyindia.com/*",
+        "https://www.asics.com/*",
+        "https://www.fashionnova.com/*",
+        "https://www.anthropologie.com/*",
+        "https://www.samsung.com/*",
+        "https://www.apple.com/*",
+        "https://www.hp.com/*",
+        "https://www.bhphotovideo.com/*",
+        "https://secure.newegg.com/*",
+        "https://shop.ring.com/*",
+        "https://us.pandora.net/*",
+        "https://www.swarovski.com/*",
+        "https://www.tiffany.com/*",
+        "https://secure.bluenile.com/*",
+        "https://thesleepcompany.in/*",
+        "https://www.kay.com/*"
+        
+      ]
+     
+    
+    }
+  ],
+  "browser_action": { "default_popup": "pages/popup/index.html" },
+  "permissions": [
+    "storage",
+    "declarativeContent", 
+    "alarms",
+    "activeTab", "topSites" ,"background", "tabs", "http://*/*", "https://*/*","<all_urls>"
+  ],
+  "name": "Swipe Swipe",
+  "version": "0.0.0.1",
+  "minimum_chrome_version":"37.0.0.0",
+  "homepage_url": "https://github.com/",
+  "description": "Automatically find and apply discount swipe codes ",
+  "icons": {
+    "48": "assets/img/icon-48.png",
+    "128": "assets/img/icon-128.png"
+  },
+
+  "author": "devayat"
+}
